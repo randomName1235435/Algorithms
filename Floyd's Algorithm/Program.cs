@@ -24,7 +24,7 @@ namespace Floyd_s_Algorithm
             // 2 pointer represents two runner running the nodes down, one is faster than the other
             // if there is a cycle, the runners will meet at some time
             // if not cycle the runners will never meet
-
+            
             while (true)
             {
                 slowRunner = array[slowRunner];
@@ -39,6 +39,7 @@ namespace Floyd_s_Algorithm
             // than newRunner start at beginning of line
             // throu magic we know that the left nodes from position of slowRunner to connected node,
             // is the rest of line nodes divide by circle nodes
+            // so if both run on same speed they will meet at connecting node
 
             int newRunner = array[0];
             int circleRunner = slowRunner;
